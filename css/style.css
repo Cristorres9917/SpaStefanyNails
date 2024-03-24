@@ -22,6 +22,9 @@ html {
   body {
     font-family: var(--fuentePrincipal);
     font-size: 16px; 
+    margin-left: 8rem;
+    margin-top: 8rem;
+    transition: margin-left 300ms cubic-bezier(0.085, 0.135, 0.15, 0.86);
   }
 
   /*globales*/
@@ -34,7 +37,6 @@ html {
   }
 
   img {
-    max-width: 100%;
     width: 100%;
     height: auto;
     display: block;
@@ -67,7 +69,166 @@ h3 {
     margin: 3rem 0;
 }
 
+.icono {
+    width: 3rem;
+    cursor: pointer;
+   
+}
 
 /*Menu lateral*/
+
+.header {
+    width: 100%;
+    height: 8rem;
+    background-color: var(--RosadoClaro);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.icon__menu {
+    width: 5rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(1rem);
+    position: absolute;
+}
+
+.menu__side{
+    width: 8rem;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    font-size: 1.8rem;
+    overflow: hidden;
+    overflow: scroll;
+    border-right: 2rem solid var(--Rosado);
+    transition: all 300ms cubic-bezier(0.085, 0.135, 0.15, 0.86);
+    color: var(--blanco);
+    background-color: var(--Rosado);
+}
+
+/*ocultar scroll*/
+
+.menu__side::-webkit-scrollbar{
+    display: none;
+}
+
+.menu__side{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.name__page{
+    padding: 0rem 2.5rem;
+    display: flex;
+    align-items: center;
+   
+}
+
+.name__page img{
+    margin-right: 2rem;
+}
+
+.name__page h4 {
+    text-align: center;
+    text-transform: uppercase;
+}    
+
+.options__menu{
+    padding: 2rem 3rem;
+    position: absolute;
+    top: 8rem;
+}
+
+.options__menu a{
+    color: var(--blanco);
+    cursor: default;
+    display: block;
+    position: relative;
+    transition: color 300ms;
+}
+
+.options__menu a:hover{
+    color: var(--negro);
+}
+
+.options__menu .option{
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.options__menu .option h3{
+    font-size: 1.5rem;
+}
+
+.options__menu .option img{
+    width: 2rem;
+    margin-right: 2rem;
+    cursor: pointer;
+
+}
+
+.options__menu .option h3{
+    font-weight: 300;
+    cursor: pointer;
+}
+
+a.select {
+    color: var(--negro);
+}
+
+.options__menu .select .option h3 {
+    font-weight: 800;
+}
+
+.select:before{
+    content: '';
+    width: .6rem;
+    height: 80%;
+    background-color: var(--blanco);
+    position: absolute;
+    top: 10%;
+    left: -3rem;
+}
+
+/*clases para javascript*/
+
+.body_move{
+    margin-left: 25rem;
+}
+
+.menu__side_move{
+    width: 25rem;
+
+}
+
+
+@media screen and (max-width: 760px)  {
+    .body_move{
+        margin-left: 0;
+    }
+
+    .menu__side_move {
+        width: 8rem;
+        left: -8rem;
+    }
+    
+}
+
+/*contenido index*/
+
+main{
+    padding: 2rem;
+}
+
 
 

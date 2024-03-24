@@ -1,0 +1,73 @@
+:root {
+    /*Colores*/
+    --negro: #353535;
+    --blanco: #ffffff;
+    --Rosado: #ffafcc;
+    --AzulClaro: #bde0fe;
+    --RosadoClaro: #ffc8dd;
+    --Gris: #ccd5ae;
+    --fuentePrincipal: "Poppins", sans-serif;
+    --fuente: "Amatic SC", sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    font-family: var(--fuentePrincipal);
+    font-size: 16px; 
+  }
+
+  /*globales*/
+
+  h1,h2,h3 {
+    text-align: center;
+    margin: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+
+.container {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.seccion {
+    margin: 3rem 0;
+}
+
+
+/*Menu lateral*/
+
+
